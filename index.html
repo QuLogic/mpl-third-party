@@ -1,13 +1,16 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Third-party and user-contributed packages &#8212; Matplotlib third-party packages  documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -17,27 +20,27 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     
-      
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -49,7 +52,7 @@
     
 
 <a class="navbar-brand" href="https://matplotlib.org/stable">
-  <img src="_static/logo2.svg" class="logo" alt="logo">
+  <img src="_static/images/logo2.svg" class="logo" alt="logo">
 </a>
 
 
@@ -65,51 +68,31 @@
     <div id="navbar-center" class="mr-auto">
       
       <div class="navbar-center-item">
-        <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/users/installing.html">
-  Installing
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/plot_types/index.html">
-  Plot types
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/gallery/index.html">
-  Examples
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/tutorials/index.html">
-  Tutorials
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/api/index.html">
-  API
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/users/index.html">
-  Users guide
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference external nav-link" href="http://matplotlib.org/stable/devel/index.html">
-  Contributing
- </a>
-</li>
-
-    
+        
+<ul id="navbar-main-elements" class="navbar-nav">
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/plot_types/index">Plot types</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/gallery/index">Examples</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/tutorials/index">Tutorials</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/api/index">Reference</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/index">Usage guide</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/devel/index">Develop</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/release_notes">Release notes</a>
+  </li>
 </ul>
+
       </div>
       
     </div>
@@ -117,7 +100,8 @@
     <div id="navbar-end">
       
       <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        
+      <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
           <a class="nav-link" href="https://gitter.im/matplotlib" rel="noopener" target="_blank" title="gitter">
             <span><i class="fab fa-gitter"></i></span>
@@ -157,6 +141,10 @@
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items">
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -191,8 +179,8 @@
                 
   <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="third-party-and-user-contributed-packages">
-<h1>Third-party and user-contributed packages<a class="headerlink" href="#third-party-and-user-contributed-packages" title="Permalink to this headline">¶</a></h1>
+<section id="third-party-and-user-contributed-packages">
+<h1>Third-party and user-contributed packages<a class="headerlink" href="#third-party-and-user-contributed-packages" title="Permalink to this headline">#</a></h1>
 <p>A list of packages that extend Matplotlib.  These are maintained
 and distributed independently from Matplotlib so go to the website
 listed for instructions.</p>
@@ -206,46 +194,238 @@ where we give you a template to make it easy!</p>
 <a class="reference external" href="https://pypi.org/search/?q=&amp;o=&amp;c=Framework+%3A%3A+Matplotlib">PyPI</a>
 if package maintainers have added the <code class="docutils literal notranslate"><span class="pre">Framework</span> <span class="pre">::</span> <span class="pre">Matplotlib</span></code>
 in the classifier list in the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file of their package.</p>
-<div class="toctree-wrapper compound">
-</div>
 <div>
-<table>
+<table id="packages">
+
+  <tr>
+    <th colspan=5>
+
+      <h3 id="alternative-apis">
+        Alternative APIs
+        <a class="headerlink" href="#alternative-apis" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
 
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Animations">Animations</a></h3></td>
+
+      <td>
+        <a href="https://github.com/holoviz/holoviews">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/holoviews">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/holoviews">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://holoviews.org">holoviews</a>
+
+    </td>
+    <td>
+      High-level API providing composable multidimensional or columnar data objects that visualize themselves.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/holoviz/hvplot">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/hvplot">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/hvplot">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://hvplot.holoviz.org">hvplot</a>
+
+    </td>
+    <td>
+      Composable, interactive pandas and xarray .plot() objects.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/pandas-dev/pandas">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/pandas">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/pandas">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://pandas.pydata.org">pandas</a>
+
+    </td>
+    <td>
+      Tabular data analysis and manipulation tool providing a .plot() API for Matplotlib plotting.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/has2k1/plotnine">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/plotnine">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/plotnine">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://plotnine.readthedocs.io">plotnine</a>
+
+    </td>
+    <td>
+      A grammar of graphics for Python.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/pydata/xarray">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/xarray">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/xarray">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://xarray.pydata.org">xarray</a>
+
+    </td>
+    <td>
+      Multi-dimensional data analysis and manipulation tool providing a .plot() API for Matplotlib plotting.
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="animations">
+        Animations
+        <a class="headerlink" href="#animations" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/t-makaro/animatplot">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/animatplot">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/animatplot">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/animatplot">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://animatplot.readthedocs.io/en/latest/index.html">animatplot</a>
+      <a href="https://animatplot.readthedocs.io">animatplot</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Interactive animated plots.
     </td>
 
@@ -254,32 +434,34 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/maxhumber/gif">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/jwkvam/celluloid">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/gif">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/celluloid">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/celluloid">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/maxhumber/gif">gif</a>
+      <a href="https://github.com/jwkvam/celluloid#celluloid">celluloid</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Ultra lightweight animated gif API.
+    <td>
+      Matplotlib animations made easy.
     </td>
 
 
@@ -287,74 +469,148 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/WarrenWeckesser/numpngw">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/maxhumber/gif">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/numpngw">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/gif">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/WarrenWeckesser/numpngw">numpngw</a>
+      <a href="https://github.com/maxhumber/gif">gif</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Ultra-lightweight animated GIF API.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/WarrenWeckesser/numpngw">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/numpngw">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/WarrenWeckesser/numpngw">numpngw</a>
+
+    </td>
+    <td>
       Write animated pngs.
     </td>
 
 
     </tr>
 
-
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Colormaps and styles">Colormaps and styles</a></h3></td>
+
+      <td>
+        <a href="https://github.com/jbusecke/xmovie">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/xmovie">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/xmovie">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/jbusecke/xmovie">xmovie</a>
+
+    </td>
+    <td>
+      A simple way of creating beautiful movies from xarray objects.
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="colormaps-and-styles">
+        Colormaps and styles
+        <a class="headerlink" href="#colormaps-and-styles" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/1313e/CMasher">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/cmasher">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/cmasher">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/cmasher">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://cmasher.readthedocs.io">CMasher</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Scientific colormaps for making accessible, informative and 'cmashing' plots
+    <td>
+      Scientific colormaps for making accessible, informative and 'cmashing' plots.
     </td>
 
 
@@ -362,33 +618,68 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/callumrollo/cmcrameri">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/cmcrameri">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/cmcrameri">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/callumrollo/cmcrameri">cmcrameri</a>
+
+    </td>
+    <td>
+      Fabio Crameri's perceptually uniform colormaps for geosciences.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/matplotlib/cmocean">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/cmocean">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/cmocean">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/cmocean">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://matplotlib.org/cmocean">cmocean</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Perceptually uniform colormaps for oceanographic variables.
     </td>
 
@@ -397,31 +688,167 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/dhaitz/mplcyberpunk">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/yt-project/cmyt">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplcyberpunk">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/cmyt">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/cmyt">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/dhaitz/mplcyberpunk">mplcyberpunk</a>
+      <a href="https://github.com/yt-project/cmyt">cmyt</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Colormaps from the yt project.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/holoviz/colorcet">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/colorcet">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/colorcet">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://colorcet.holoviz.org">colorcet</a>
+
+    </td>
+    <td>
+      Perceptually uniform continuous colormaps and perceptually distinct categorical color sets.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/alan-turing-institute/distinctipy">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/distinctipy">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://distinctipy.readthedocs.io/en/latest">distinctipy</a>
+
+    </td>
+    <td>
+      Qualitative colormaps of any length, generated to be maximally distinct.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/vork/farrowandball">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/farrow-and-ball">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/vork/farrowandball">farrowandball</a>
+
+    </td>
+    <td>
+      Color palettes inspired by British paint manufacturer Farrow and Ball.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/dhaitz/mplcyberpunk">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mplcyberpunk">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/dhaitz/mplcyberpunk">mplcyberpunk</a>
+
+    </td>
+    <td>
       Cyberpunk / neon-glow look for plots.
     </td>
 
@@ -430,33 +857,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/matplotlib/viscm">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/pnkraemer/tueplots">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/viscm">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/tueplots">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/viscm">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
-        </a>
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/matplotlib/viscm">viscm</a>
+      <a href="https://tueplots.readthedocs.io/en/latest">tueplots</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Light-weight matplotlib styles for figures used in scientific publications.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/matplotlib/viscm">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/viscm">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/viscm">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/matplotlib/viscm">viscm</a>
+
+    </td>
+    <td>
       Tool for analyzing colormaps and creating new colormaps.
     </td>
 
@@ -464,41 +924,47 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
     </tr>
 
 
-    <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Documentation">Documentation</a></h3></td>
-    </tr>
+  <tr>
+    <th colspan=5>
+
+      <h3 id="documentation">
+        Documentation
+        <a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
 
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/sphinx-gallery/sphinx-gallery">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/sphinx-gallery">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/sphinx-gallery">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/sphinx-gallery">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://sphinx-gallery.github.io/stable">sphinx-gallery</a>
+      <a href="https://sphinx-gallery.github.io">sphinx-gallery</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Create matplotlib galleries for your sphinx-built documentation.
     </td>
 
@@ -506,75 +972,48 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
     </tr>
 
 
-    <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Domain specific libraries">Domain specific libraries</a></h3></td>
-    </tr>
+  <tr>
+    <th colspan=5>
+
+      <h3 id="domain-specific-libraries">
+        Domain-specific libraries
+        <a class="headerlink" href="#domain-specific-libraries" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
 
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/dna-features-viewer">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
-      </td>
-
-
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
-
-      <a href="https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer">DnaFeaturesViewer</a>
-
-    </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Visualize DNA features, e.g. from GenBank or Gff files, or Biopython SeqRecords.
-    </td>
-
-
-    </tr>
-
-    <tr>
-
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/arviz-devs/arviz">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/arviz">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/arviz">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/arviz">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://arviz-devs.github.io/arviz">arviz</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Exploratory analysis of Bayesian models with Python .
+    <td>
+      Exploratory analysis of Bayesian models with Python.
     </td>
 
 
@@ -582,33 +1021,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/astropy/astropy">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/astropy">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/astropy">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/astropy">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://www.astropy.org">astropy</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Astronomy processing and graphics (including mapping).
     </td>
 
@@ -617,31 +1056,196 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/brainglobe/bg-heatmaps">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/bgheatmap">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/brainglobe/bg-heatmaps">bg-heatmaps</a>
+
+    </td>
+    <td>
+      Brain heatmaps visualization.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/nschloe/colorio">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/colorio">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/nschloe/colorio">colorio</a>
+
+    </td>
+    <td>
+      Tools for working with colors and color spaces.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/nschloe/cplot">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/cplot">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/nschloe/cplot">cplot</a>
+
+    </td>
+    <td>
+      Plot complex-valued functions.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/dna-features-viewer">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer">DnaFeaturesViewer</a>
+
+    </td>
+    <td>
+      Visualize DNA features, e.g. from GenBank or Gff files, or Biopython SeqRecords.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/ghiffaryr/grplot">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/grplot">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/ghiffaryr/grplot">grplot</a>
+
+    </td>
+    <td>
+      Complete and attractive statistical graphs in one function.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/the-bucketless/hockey_rink">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/hockey_rink">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/hockey_rink">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://github.com/the-bucketless/hockey_rink">hockey_rink</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       A Python library for plotting hockey rinks with Matplotlib.
     </td>
 
@@ -650,33 +1254,68 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/matplotlib/mplfinance">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/guiwitz/microfilm">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplfinance">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/microfilm">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/mplfinance">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/microfilm">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/matplotlib/mplfinance">mplfinance</a>
+      <a href="https://guiwitz.github.io/microfilm">microfilm</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      2D image plots and animations for multi-channel microscopy data.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/matplotlib/mplfinance">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mplfinance">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/mplfinance">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/matplotlib/mplfinance">mplfinance</a>
+
+    </td>
+    <td>
       Utilities for the visual analysis of financial data.
     </td>
 
@@ -685,31 +1324,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/andrewRowlinson/mplsoccer">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/scikit-hep/mplhep">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplsoccer">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/mplhep">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/mplhep">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/andrewRowlinson/mplsoccer">mplsoccer</a>
+      <a href="https://mplhep.readthedocs.io">mplhep</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Set of helpers for matplotlib to more easily produce plots typically needed in high energy physics.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/andrewRowlinson/mplsoccer">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mplsoccer">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/andrewRowlinson/mplsoccer">mplsoccer</a>
+
+    </td>
+    <td>
       Plot soccer/football pitches and charts.
     </td>
 
@@ -718,29 +1392,64 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/AnkitBarik/planetMagFields">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/networkx/networkx">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:center; style="vertical-align:top;">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-empty.svg">
+      <td>
+        <a href="https://pypi.org/project/networkx">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/networkx">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/AnkitBarik/planetMagFields">planetMagFields</a>
+      <a href="https://networkx.org">networkx</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Working with and plotting network graphs.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/AnkitBarik/planetMagFields">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/pip-empty.svg">
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/AnkitBarik/planetMagFields">planetMagFields</a>
+
+    </td>
+    <td>
       Routines to easily access information about magnetic fields of planets in our solar system and visualize them in both 2D and 3D.
     </td>
 
@@ -749,34 +1458,34 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/has2k1/plotnine">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/ARM-DOE/pyart">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/plotnine">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/arm_pyart">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/plotnine">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/arm_pyart">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://plotnine.readthedocs.io/en/latest">plotnine</a>
+      <a href="https://github.com/ARM-DOE/pyart">pyart</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      a grammar of graphics for Python
+    <td>
+      The Python ARM Radar toolkit, used to analyze and plot weather radar data.
     </td>
 
 
@@ -784,33 +1493,132 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/ponnhide/pyCircos">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/python-circos">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/ponnhide/pycircos">pyCircos</a>
+
+    </td>
+    <td>
+      A visualization tool for designing circos plots
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/janosh/pymatviz">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/pymatviz">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/janosh/pymatviz">pymatviz</a>
+
+    </td>
+    <td>
+      A toolkit for visualizations in materials informatics.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/matplotlib/pyplutchik">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/pyplutchik">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/alfonsosemeraro/pyplutchik">pyplutchik</a>
+
+    </td>
+    <td>
+      Python visualisation for Plutchik annotated corpora.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/mwaskom/seaborn">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/seaborn">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/seaborn">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/seaborn">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://seaborn.pydata.org">seaborn</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       High-level interface for drawing attractive statistical graphics.
     </td>
 
@@ -819,31 +1627,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/SarthakJariwala/seaborn-image">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/seaborn-image">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/seaborn-image">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/seaborn-image">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://seaborn-image.readthedocs.io">seaborn-image</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       High-level API for drawing informative and attractive images.
     </td>
 
@@ -852,33 +1662,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/DistrictDataLabs/yellowbrick">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/yellowbrick">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/yellowbrick">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/yellowbrick">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://www.scikit-yb.org/en/latest">yellowbrick</a>
+      <a href="https://www.scikit-yb.org">yellowbrick</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Visual analysis and diagnostic tools to facilitate machine learning model selection.
     </td>
 
@@ -886,40 +1696,193 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="experimental-projects-that-may-be-merged-upstream-eventually">
+        Experimental projects that may be merged upstream eventually
+        <a class="headerlink" href="#experimental-projects-that-may-be-merged-upstream-eventually" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#GUI applications">GUI applications</a></h3></td>
+
+      <td>
+        <a href="https://github.com/tacaswell/mpl-gui">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mpl-gui">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://tacaswell.github.io/mpl-gui">mpl-gui</a>
+
+    </td>
+    <td>
+      Prototype for a pyplot alternative
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/tacaswell/mpl-qtthread">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mpl-qtthread">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://tacaswell.github.io/mpl-qtthread">mpl-qtthread</a>
+
+    </td>
+    <td>
+      Prototype for an approximatly thread-safe Qt backend
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="gui-applications">
+        GUI applications
+        <a class="headerlink" href="#gui-applications" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/glue-viz/glue">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/glue">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="http://docs.glueviz.org">glue</a>
+
+    </td>
+    <td>
+      Easily linking visualizations of scientific datasets across many files.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/holoviz/lumen">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/lumen">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/lumen">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://lumen.holoviz.org">lumen</a>
+
+    </td>
+    <td>
+      Declarative YAML or GUI specification for apps/dashboards with Matplotlib and other plots.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/rgerum/pylustrator">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/pylustrator">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/pylustrator">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://pylustrator.readthedocs.io/en/latest">pylustrator</a>
+      <a href="https://pylustrator.readthedocs.io">pylustrator</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Interactive editor to style plots
+    <td>
+      Interactive editor to style Matplotlib plots.
     </td>
 
 
@@ -927,71 +1890,114 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/PySimpleGUI/PySimpleGUI">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/PySimpleGUI">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/PySimpleGUI">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="http://www.PySimpleGUI.com">PySimpleGUI</a>
+
+    </td>
+    <td>
+      Create custom GUIs quickly & easily on top of tkinter, Qt, WxPython or Remi.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/SojiroFukuda/sview-gui">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/sviewgui">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/sviewgui">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/SojiroFukuda/sview-gui">sview-gui</a>
+      <a href="https://github.com/SojiroFukuda/sview-gui">sview-gui</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      PyQt5 GUI for data visualisation of csv file or pandas' DataFrames.
+    <td>
+      PyQt5 GUI for data visualisation of CSV file or pandas DataFrames.
     </td>
 
 
     </tr>
 
 
-    <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Interactivity">Interactivity</a></h3></td>
-    </tr>
+  <tr>
+    <th colspan=5>
+
+      <h3 id="interactivity">
+        Interactivity
+        <a class="headerlink" href="#interactivity" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
 
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/ianhi/mpl-interactions">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mpl-interactions">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/mpl-interactions">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/mpl-interactions">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://mpl-interactions.readthedocs.io">mpl-interactions</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Interactive widgets for responsive plots.
     </td>
 
@@ -1000,33 +2006,68 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/ianhi/mpl-point-clicker">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mpl-point-clicker">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/mpl-point-clicker">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://mpl-point-clicker.readthedocs.io">mpl-point-clicker</a>
+
+    </td>
+    <td>
+      Record click locations on a figure. Supports multiple classes.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/anntzer/mplcursors">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplcursors">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/mplcursors">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/mplcursors">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://mplcursors.readthedocs.io">mplcursors</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Interactive data selection cursors.
     </td>
 
@@ -1035,31 +2076,31 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/joferkington/mpldatacursor">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mpldatacursor">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/mpldatacursor">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/joferkington/mpldatacursor">mpldatacursor</a>
+      <a href="https://github.com/joferkington/mpldatacursor">mpldatacursor</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Interactive data selection cursors.
     </td>
 
@@ -1068,71 +2109,112 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/anntzer/mplinorm">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:center; style="vertical-align:top;">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-empty.svg">
+      <td>
+        <img src="_static/badges/pip-empty.svg">
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/anntzer/mplinorm">mplinorm</a>
+      <a href="https://github.com/anntzer/mplinorm">mplinorm</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Interactive contrast adjustment for Matplotlib images.
     </td>
 
 
     </tr>
 
-
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Mapping">Mapping</a></h3></td>
+
+      <td>
+        <a href="https://github.com/holoviz/panel">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/panel">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/panel">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://panel.holoviz.org">panel</a>
+
+    </td>
+    <td>
+      Dashboards and web apps using Matplotlib and other figures.
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="mapping">
+        Mapping
+        <a class="headerlink" href="#mapping" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/SciTools/cartopy">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/cartopy">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/cartopy">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/cartopy">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="https://scitools.org.uk/cartopy/docs/latest">cartopy</a>
+      <a href="https://scitools.org.uk/cartopy">cartopy</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Produce maps and other geospatial data analyses.
     </td>
 
@@ -1141,33 +2223,103 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/raphaelquast/eomaps">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/eomaps">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/eomaps">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://raphaelquast.github.io/EOmaps">eomaps</a>
+
+    </td>
+    <td>
+      A library to create interactive maps of geographical datasets.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/geopandas/geopandas">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/geopandas">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/geopandas">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://geopandas.org">geopandas</a>
+
+    </td>
+    <td>
+      Pandas extended to support geographical data and algorithms.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/residentmario/geoplot">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/geoplot">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/geoplot">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/geoplot">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://residentmario.github.io/geoplot/index.html">geoplot</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       High-level Python geospatial plotting library based on cartopy.
     </td>
 
@@ -1176,31 +2328,68 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/joferkington/mplstereonet">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/holoviz/geoviews">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplstereonet">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/geoviews">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/pyviz/geoviews">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/joferkington/mplstereonet">mplstereonet</a>
+      <a href="https://geoviews.org">geoviews</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      High-level geographic plotting built on Cartopy and Matplotlib.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/joferkington/mplstereonet">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mplstereonet">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/mplstereonet">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/joferkington/mplstereonet">mplstereonet</a>
+
+    </td>
+    <td>
       Lower-hemisphere equal-area and equal-angle stereonets.
     </td>
 
@@ -1209,31 +2398,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/ColCarroll/ridge_map">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/marceloprates/prettymaps">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/ridge_map">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/prettymaps">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/prettymaps">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/ColCarroll/ridge_map">ridge_map</a>
+      <a href="https://github.com/marceloprates/prettymaps">prettymaps</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Minimal Python library to draw customized maps from OpenStreetMap data.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/ColCarroll/ridge_map">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/ridge_map">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/ColCarroll/ridge_map">ridge_map</a>
+
+    </td>
+    <td>
       Library for making ridge plots of... ridges.
     </td>
 
@@ -1241,39 +2465,128 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="miscellaneous">
+        Miscellaneous
+        <a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Plot types">Plot types</a></h3></td>
+
+      <td>
+        <a href="https://github.com/earthlab/matplotcheck">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/matplotcheck">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/matplotcheck">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://matplotcheck.readthedocs.io">matplotcheck</a>
+
+    </td>
+    <td>
+      A package designed to test matplotlib plots.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/nschloe/matplotx">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/matplotx">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/matplotx">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/nschloe/matplotx">matplotx</a>
+
+    </td>
+    <td>
+      Useful styles and extensions for Matplotlib.
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="plot-types">
+        Plot types
+        <a class="headerlink" href="#plot-types" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/swfiua/blume">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/blume">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/blume">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/swfiua/blume">blume</a>
+      <a href="https://github.com/swfiua/blume">blume</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Alternate table artist.
     </td>
 
@@ -1282,69 +2595,69 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/holoviz/datashader">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/datashader">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/pyviz/datashader">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://datashader.org">datashader</a>
+
+    </td>
+    <td>
+      Server-side rendering of large datasets as Matplotlib figures.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/konstantint/matplotlib-venn">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/matplotlib-venn">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/matplotlib-venn">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/matplotlib-venn">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/konstantint/matplotlib-venn">matplotlib-venn</a>
+      <a href="https://github.com/konstantint/matplotlib-venn">matplotlib-venn</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Plotting area-weighted two- and three-circle venn diagrams.
-    </td>
-
-
-    </tr>
-
-    <tr>
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/pandas-dev/pandas">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/pandas">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/pandas">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
-        </a>
-      </td>
-
-
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
-
-      <a href="https://pandas.pydata.org">pandas</a>
-
-    </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Data analysis and manipulation tool.
+    <td>
+      Plotting area-weighted two- and three-circle Venn diagrams.
     </td>
 
 
@@ -1352,31 +2665,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/astrofrog/mpl-scatter-density">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mpl-scatter-density">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/mpl-scatter-density">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/astrofrog/mpl-scatter-density">mpl-scatter-density</a>
+
+    </td>
+    <td>
+      2D histograms for large collections of point data.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/ImSoErgodic/py-upset">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/pyupset">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/pyupset">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/ImSoErgodic/py-upset">py-upset</a>
+      <a href="https://github.com/ImSoErgodic/py-upset">py-upset</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       UpSet suite of visualization methods.
     </td>
 
@@ -1385,33 +2733,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/scls19fr/windrose">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/windrose">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/windrose">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/windrose">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/scls19fr/windrose">windrose</a>
+      <a href="https://github.com/scls19fr/windrose">windrose</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Create windrose plots.
     </td>
 
@@ -1420,68 +2768,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/pydata/xarray">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/xarray">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
-        </a>
-      </td>
-
-
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/xarray">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
-        </a>
-      </td>
-
-
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
-
-      <a href="http://xarray.pydata.org/en/stable">xarray</a>
-
-    </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
-      Makes multi-dimensional arrays simple, efficient, and fun!
-    </td>
-
-
-    </tr>
-
-    <tr>
-
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/yt-project/yt">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/yt">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/yt">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/yt">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://yt-project.org">yt</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Package for analyzing and visualizing volumetric data.
     </td>
 
@@ -1489,41 +2802,47 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
     </tr>
 
 
-    <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Plotting utilities">Plotting utilities</a></h3></td>
-    </tr>
+  <tr>
+    <th colspan=5>
+
+      <h3 id="plotting-utilities">
+        Plotting utilities
+        <a class="headerlink" href="#plotting-utilities" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
 
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/Phlya/adjustText">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/adjustText">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/adjustText">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/adjustText">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/Phlya/adjustText">adjustText</a>
+      <a href="https://github.com/Phlya/adjustText">adjustText</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Draw many text artists so that they do not overlap.
     </td>
 
@@ -1532,33 +2851,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/bendichter/brokenaxes">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/brokenaxes">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/brokenaxes">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/brokenaxes">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/bendichter/brokenaxes">brokenaxes</a>
+      <a href="https://github.com/bendichter/brokenaxes">brokenaxes</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Plots with breaks in the axes.
     </td>
 
@@ -1567,31 +2886,31 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/ebenp/figpager">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/figpager">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/figpager">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/ebenp/figpager">figpager</a>
+      <a href="https://github.com/ebenp/figpager">figpager</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Save plots with single or multiple pages.
     </td>
 
@@ -1600,33 +2919,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://github.com/matplotlib/grid-strategy">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+      <td>
+        <a href="https://github.com/tomicapretto/flexitext">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/grid-strategy">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/flexitext">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://anaconda.org/conda-forge/grid-strategy">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
-        </a>
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/matplotlib/grid-strategy">grid-strategy</a>
+      <a href="https://github.com/tomicapretto/flexitext">flexitext</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
+      Draw text with multiple styles in Matplotlib.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/matplotlib/grid-strategy">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/grid-strategy">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/grid-strategy">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/matplotlib/grid-strategy">grid-strategy</a>
+
+    </td>
+    <td>
       Create a grid of subplots based on the number of axes to be plotted.
     </td>
 
@@ -1635,31 +2987,31 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/znstrider/highlight_text">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/highlight_text">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/highlight_text">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/znstrider/highlight_text">highlight_text</a>
+      <a href="https://github.com/znstrider/highlight_text">highlight_text</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Make effective annotations easier in matplotlib.
     </td>
 
@@ -1668,33 +3020,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/ppinard/matplotlib-scalebar">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/matplotlib-scalebar">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/matplotlib-scalebar">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/matplotlib-scalebar">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/ppinard/matplotlib-scalebar">matplotlib-scalebar</a>
+      <a href="https://github.com/ppinard/matplotlib-scalebar">matplotlib-scalebar</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Display a scale bar.
     </td>
 
@@ -1703,33 +3055,66 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/matplotlib/matplotview">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/matplotview">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/matplotlib/matplotview">matplotview</a>
+
+    </td>
+    <td>
+      A library for creating lightweight views of matplotlib axes.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/matplotlib/mpl-probscale">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/probscale">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/probscale">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/mpl-probscale">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://matplotlib.org/mpl-probscale">mpl-probscale</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Real probability scales for matplotlib.
     </td>
 
@@ -1738,29 +3123,29 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/austinorr/mpl-template">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:center; style="vertical-align:top;">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-empty.svg">
+      <td>
+        <img src="_static/badges/pip-empty.svg">
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://austinorr.github.io/mpl-template">mpl-template</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Templating engine for consistent plots.
     </td>
 
@@ -1769,73 +3154,215 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
+        <a href="https://github.com/geo7/mpl_table">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/mpl_table">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/geo7/mpl_table">mpl_table</a>
+
+    </td>
+    <td>
+      Create custom table using matplotlib.
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
+        <a href="https://github.com/ponnhide/patchworklib">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/patchworklib">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <img src="_static/badges/conda-empty.svg">
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/ponnhide/patchworklib">patchworklib</a>
+
+    </td>
+    <td>
+      A subplot manager for intuitive layouts
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <td>
         <a href="https://github.com/lukelbd/proplot">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/proplot">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/proplot">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://anaconda.org/conda-forge/proplot">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-blue.svg">
+        <img src="_static/badges/conda-blue.svg">
         </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://proplot.readthedocs.io/en/latest">proplot</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       A lightweight matplotlib wrapper for making beautiful, publication-quality graphics.
     </td>
 
 
     </tr>
 
+    <tr>
+
+      <td>
+        <a href="https://github.com/whitead/skunk">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/skunk">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/skunk">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/whitead/skunk">skunk</a>
+
+    </td>
+    <td>
+      Insert SVG images into matplotlib elements. Can be used to also compose matplotlib plots by nesting them.
+    </td>
+
+
+    </tr>
 
     <tr>
-      <td colspan=5 style="height:4em; vertical-align:center">
-      <h3><a name="#Rendering backends">Rendering backends</a></h3></td>
+
+      <td>
+        <a href="https://github.com/nschloe/tikzplotlib">
+          <img src="_static/badges/github-gray.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://pypi.org/project/tikzplotlib">
+          <img src="_static/badges/pip-orange.svg">
+        </a>
+      </td>
+
+
+      <td>
+        <a href="https://anaconda.org/conda-forge/tikzplotlib">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
+      </td>
+
+
+    <td>
+
+      <a href="https://github.com/nschloe/tikzplotlib">tikzplotlib</a>
+
+    </td>
+    <td>
+      Save figures as TikZ/PGFplots.
+    </td>
+
+
     </tr>
 
 
+  <tr>
+    <th colspan=5>
+
+      <h3 id="rendering-backends">
+        Rendering backends
+        <a class="headerlink" href="#rendering-backends" title="Permalink to this headline">¶</a>
+      </h3>
+
+    </th>
+  </tr>
+
+
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/jheinen/gr">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/gr">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/gr">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
       <a href="https://gr-framework.org/python.html">gr</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Graphic kernel system backend.
     </td>
 
@@ -1844,31 +3371,31 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/matplotlib/mplcairo">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/mplcairo">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/mplcairo">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <img src="_static/badges/conda-empty.svg">
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://github.com/matplotlib/mplcairo">mplcairo</a>
+      <a href="https://github.com/matplotlib/mplcairo">mplcairo</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Improved backend for cairo.
     </td>
 
@@ -1877,31 +3404,33 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
     <tr>
 
-      <td style="text-align:left; vertical-align:top;">
+      <td>
         <a href="https://github.com/newville/wxmplot">
-          <img style="text-align:left; height:1.4em; max-width: none;"  src="_static/badges/github-gray.svg">
+          <img src="_static/badges/github-gray.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left; vertical-align:top;">
-        <a href="https://pypi.python.org/pypi/wxmplot">
-          <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/pip-orange.svg">
+      <td>
+        <a href="https://pypi.org/project/wxmplot">
+          <img src="_static/badges/pip-orange.svg">
         </a>
       </td>
 
 
-      <td style="text-align:left;vertical-align:top; ">
-        <img style="text-align:left; height:1.4em; max-width: none;" src="_static/badges/conda-empty.svg">
+      <td>
+        <a href="https://anaconda.org/conda-forge/wxmplot">
+        <img src="_static/badges/conda-blue.svg">
+        </a>
       </td>
 
 
-    <td style="vertical-align:top; text-align:left;cellpadding:0.3em">
+    <td>
 
-      <a href="http://newville.github.io/wxmplot">wxmplot</a>
+      <a href="https://newville.github.io/wxmplot">wxmplot</a>
 
     </td>
-    <td style="text-align:left;vertical-align:top;cellpadding:0.3em">
+    <td>
       Tighter integration with wxPython.
     </td>
 
@@ -1910,16 +3439,15 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
 
 
   </table>
-  </div></div>
+  </div></section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -1927,20 +3455,20 @@ in the classifier list in the <code class="docutils literal notranslate"><span c
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2012 - 2021 The Matplotlib development team.<br/>
+    &copy; Copyright 2012 - 2022 The Matplotlib development team.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     

@@ -295,8 +295,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/gif">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -328,8 +330,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/numpngw">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -584,8 +588,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/distinctipy">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -948,8 +954,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/cplot">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1014,8 +1022,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/grplot">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1047,8 +1057,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/hockey_rink">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1354,8 +1366,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/pymatviz">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1538,8 +1552,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/mpl-gui">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1904,8 +1920,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/mpldatacursor">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -2714,8 +2732,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/figpager">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -2747,8 +2767,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/flexitext">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -2815,8 +2837,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/highlight_text">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -2883,8 +2907,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/matplotview">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -2984,8 +3010,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/mpl_table">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>

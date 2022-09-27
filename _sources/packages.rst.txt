@@ -1589,8 +1589,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/mpl-qtthread">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>
@@ -1703,8 +1705,10 @@ Third-party and user-contributed packages
         
       
         <td>
-          <img src="_static/badges/conda-empty.svg">
-        </td>        
+          <a href="https://anaconda.org/conda-forge/pylustrator">
+          <img src="_static/badges/conda-blue.svg">
+          </a>
+        </td>
         
 
       <td>

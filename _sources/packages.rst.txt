@@ -1150,9 +1150,6 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
-          <a href="https://anaconda.org/conda-forge/pyCircos">
-          <img src="_static/badges/conda-blue.svg" alt="conda badge">
-          </a>
         </td>
 
         <td>
@@ -2667,9 +2664,6 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
-          <a href="https://anaconda.org/conda-forge/mpl-template">
-          <img src="_static/badges/conda-blue.svg" alt="conda badge">
-          </a>
         </td>
 
         <td>

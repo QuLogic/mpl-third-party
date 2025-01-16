@@ -107,6 +107,9 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
+          <a href="https://anaconda.org/conda-forge/plotnine">
+          <img src="_static/badges/conda-blue.svg" alt="conda badge">
+          </a>
         </td>
 
         <td>
@@ -451,6 +454,9 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
+          <a href="https://anaconda.org/pyviz/colorcet">
+          <img src="_static/badges/conda-blue.svg" alt="conda badge">
+          </a>
         </td>
 
         <td>
@@ -812,9 +818,6 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
-          <a href="https://anaconda.org/conda-forge/hockey_rink">
-          <img src="_static/badges/conda-blue.svg" alt="conda badge">
-          </a>
         </td>
 
         <td>
@@ -2427,6 +2430,9 @@ Third-party and user-contributed packages
           </a>
         </td>
         <td>
+          <a href="https://anaconda.org/conda-forge/brokenaxes">
+          <img src="_static/badges/conda-blue.svg" alt="conda badge">
+          </a>
         </td>
 
         <td>
